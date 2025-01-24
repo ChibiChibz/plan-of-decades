@@ -1,0 +1,15 @@
+---
+import Layout from '../layouts/ProjectsPost.astro';
+import * as data from "../site/content/about.md";
+
+const { frontmatter, Content } = data;
+---
+
+<Layout
+	title={frontmatter.title}
+	description={frontmatter.description}
+	pubDate={new Date('August 08 2021')}
+	heroImage="/blog-placeholder-about.jpg"
+>
+	<Content />
+</Layout>

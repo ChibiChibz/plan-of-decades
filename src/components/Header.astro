@@ -1,0 +1,65 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+---
+
+<header>
+  <nav>
+    <a href="/">
+      <video
+        src="/videos/plan-of-decades-logo.mov"
+        autoplay
+        loop
+        muted
+        playsinline></video>
+    </a>
+    <div class="internal-links">
+      <HeaderLink href="/#ueber-uns">Tickets</HeaderLink>
+      <HeaderLink href="/#ueber-uns">Timetable</HeaderLink>
+      <HeaderLink href="/#mitgliedschaft">Line Up</HeaderLink>
+      <HeaderLink href="mailto:contact@mcweed.de">Team</HeaderLink>
+    </div>
+  </nav>
+</header>
+<style>
+  header {
+    margin: 0;
+    padding: 1rem;
+    background: transparent;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    border-bottom: 3px solid var(--white);
+
+    @media (min-width: 720px) {
+      padding: 1rem 3rem;
+    }
+  }
+  nav a {
+    margin-bottom: auto;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav .internal-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1.5rem;
+
+    @media (min-width: 720px) {
+      flex-direction: row;
+    }
+  }
+
+  video {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 50%;
+  }
+</style>

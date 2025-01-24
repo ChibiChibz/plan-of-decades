@@ -1,0 +1,76 @@
+---
+interface Product {
+  name: string;
+  description: string;
+  price: string;
+}
+
+interface Props {
+  products: Product[];
+}
+
+const { products } = Astro.props;
+---
+<ul class="price-list">
+  {products.map((product, index) => (
+    <li>
+      <div class="index"><strong>{(index + 1).toString().padStart(2, '0')}</strong></div>
+      <div class="name">{product.name}</div>
+      <div class="description">{product.description}</div>
+      <div class="price">{product.price}</div>
+    </li>
+  ))}
+</ul>
+
+<style>
+  .price-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .price-list li {
+    display: grid;
+    grid-template-areas:
+      "index name name name name name name name"
+      "description description description description description description description price"; /* Set up the areas in a 2x2 layout */
+    gap: 1rem 0; /* Smaller gap between rows */
+    align-items: center;
+    padding: 1.5rem 1rem;
+    border-bottom: 1px solid var(--gray-dark);
+    font-size: 1.2rem;
+
+    @media screen and (min-width: 720px) {
+      font-size: 1.5rem;
+      grid-template-columns: 1fr 2fr 3fr 1fr; /* Switch to 1x4 layout on larger screens */
+      grid-template-areas: 
+      "index name description price"; /* Reset grid areas for larger screens */
+      gap: 1rem;
+    }
+  }
+
+  .price-list li:last-child {
+    border-bottom: none;
+  }
+
+  .index {
+    font-weight: bold;
+    grid-area: index;
+  }
+
+  .name {
+    font-weight: bold;
+    grid-area: name;
+  }
+
+  .description {
+    color: var(--gray-light);
+    grid-area: description;
+  }
+
+  .price {
+    text-align: right;
+    font-weight: bold;
+    color: var(--primary-color);
+    grid-area: price;
+  }
+</style>

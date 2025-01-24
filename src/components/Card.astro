@@ -1,0 +1,38 @@
+---
+interface Props {
+  headline: string;
+}
+
+const { headline } = Astro.props;
+---
+
+<div class="card">
+  <h2>{headline}</h2>
+  <slot />
+</div>
+<style>
+  .card {
+    background-color: var(--muted);
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em;
+    margin: 0;
+    padding: 6rem 4rem;
+    flex: 1;
+    min-height: 1px;
+    min-width: 1px;
+    @media (min-width: 720px) {
+      margin: 5rem 0;
+      padding: 12rem 4rem;
+    }
+  }
+  h2 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    color: var(--green);
+    @media (min-width: 720px) {
+      font-size: 6rem;
+      margin-bottom: 8rem;
+    }
+  }
+</style>

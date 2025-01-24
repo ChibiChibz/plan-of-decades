@@ -1,0 +1,123 @@
+---
+import { SITE_TITLE } from "../consts";
+---
+
+<div class="hero">
+  <img
+    class="hero-image"
+    src="/images/plan-of-decades-hero.webp"
+    alt="McWeed Logo"
+  />
+  <div class="hero-description">
+    <img
+      class="hero-description-image"
+      src="/images/dj.jpg"
+      alt="McWeed Logo"
+    />
+    <div class="hero-text">
+      <h1>{SITE_TITLE}</h1>
+      <h2>
+        is an event collaboration combining with the local greek events “Plan
+        Below” and “Decade Rules”.
+      </h2>
+      <p>
+        Plan Below was created clearly to give an annually event to the culture
+        having its own unique open style categories and also bringing new sounds
+        and tracks by supporting upcoming dj’s of the greek community. Decade
+        Rules concept is about introducing a certain decade each time. The event
+        happens so new generation dancers or even the older generation can
+        experience and learn the music history of every style. Plan of Decades
+        was created by local dancers to support our small dance community. Since
+        Greek dance community is small and not so active on creating and giving
+        such events, we decided to collaborate and create “Plan of Decades” This
+        event is here to finally create something big in Greece inviting new
+        people from Greece and all over World to meet , party and exchange
+        together.
+      </p>
+    </div>
+  </div>
+  <div class="hero-video">
+    <iframe
+      width="315"
+      height="560"
+      src="https://www.youtube.com/embed/SCDvwEhwzU8"
+      title="Plan of decades 2024 recap"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen></iframe>
+  </div>
+</div>
+<style>
+  .hero {
+    text-align: center;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+  }
+  h1,
+  h2 {
+    font-size: 3.2rem;
+    color: var(--white);
+    text-transform: uppercase;
+    text-align: left;
+    margin: 0;
+  }
+  p {
+    font-size: 1.4rem;
+    color: var(--white);
+    margin-top: 4rem;
+    text-align: left;
+  }
+  .hero-image {
+    width: 100rem;
+    padding: 6rem;
+    margin: auto;
+  }
+  .hero-description {
+    display: flex;
+    gap: 1rem;
+    padding: 4rem;
+    margin: auto;
+  }
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-description-image {
+    width: 60%;
+    height: auto;
+    margin: auto;
+  }
+  .hero-video {
+    margin: auto;
+    height: 60rem;
+  }
+  .scroll-indicator__wrapper {
+    position: absolute;
+    bottom: 5rem;
+    left: 5rem;
+    overflow: hidden;
+    height: 11.1rem;
+    width: 1.6rem;
+    animation: indicator-bounce 2s linear infinite;
+  }
+  .scroll-indicator {
+    position: absolute;
+    bottom: 0;
+    height: 11.1rem;
+    width: 1.6rem;
+    transform: translateY(0.9rem);
+  }
+  @keyframes indicator-bounce {
+    from {
+      height: 11.1rem;
+    }
+    20% {
+      height: 11.1rem;
+    }
+    to {
+      height: 0;
+    }
+  }
+</style>

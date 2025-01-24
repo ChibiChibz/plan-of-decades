@@ -1,0 +1,14 @@
+---
+export interface Props {
+  icon: string;
+  class?: string;
+}
+
+const { icon, class: className } = Astro.props as Props;
+
+// Import SVG dynamically using ?raw, but ensure paths are pre-imported
+const { default: innerHTML } = await import(`/src/assets/${icon}.svg?raw`);
+
+---
+
+<div class={className} set:html={innerHTML} />

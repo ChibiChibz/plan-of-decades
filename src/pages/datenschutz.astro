@@ -1,0 +1,48 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import * as data from "../site/content/privacy-policy.md";
+
+const { Content } = data;
+
+
+// Get all entries from a collection.
+// Requires the name of the collection as an argument.
+// Example: retrieve `src/content/blog/**`
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <script
+    type="text/javascript"
+    src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  </head>
+  <body>
+    <Header />
+    <main>
+      <Content />
+    </main>
+    <Footer />
+    <script>
+      declare global {
+        interface Window {
+          netlifyIdentity: any;
+        }
+      }
+
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", (user: any) => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

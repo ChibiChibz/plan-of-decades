@@ -1,0 +1,65 @@
+---
+import type { HTMLAttributes } from "astro/types";
+
+type Props = HTMLAttributes<"a">;
+
+const { href, class: className, ...props } = Astro.props;
+
+const { pathname } = Astro.url;
+const subpath = pathname.match(/[^\/]+/g);
+const isActive = href === pathname || href === "/" + subpath?.[0];
+---
+
+<a
+  href={href}
+  class:list={["header-link", className, { active: isActive }]}
+  {...props}
+>
+  <slot />
+</a>
+<style>
+  .header-link {
+    display: flex;
+    text-decoration: none;
+    gap: 0.5rem;
+    padding: 1rem 1.5rem;
+    color: var(--white);
+    transition: all 0.3s;
+    margin-bottom: 2rem;
+    width: fit-content;
+    align-items: center;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 720px) {
+      margin-bottom: 0;
+      font-size: 2rem;
+      gap: 1rem;
+      padding: 1rem 2rem;
+    }
+  }
+
+  .header-link:hover {
+    color: var(--muted);
+    border-color: var(--muted);
+    text-decoration: underline;
+  }
+
+  .header-link__icon {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  .header-link__icon * {
+    fill: var(--gray-dark);
+    transition: all 0.3s;
+  }
+  .header-link:hover .header-link__icon * {
+    fill: var(--muted);
+  }
+
+  .header-link.active {
+    font-weight: bolder;
+    text-decoration: underline;
+    border-bottom-color: var(--accent);
+  }
+</style>

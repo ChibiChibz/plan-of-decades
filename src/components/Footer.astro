@@ -1,0 +1,124 @@
+---
+import { Icon } from "astro-icon/components";
+const today = new Date();
+---
+
+<footer>
+  <div class="anchor-links">
+    <a href="/#ueber-uns"> Tickets </a>
+    <a href="/#mitgliedschaft"> Timetable </a>
+    <a href="/#mitgliedschaft"> Line Up </a>
+    <a href="/#mitgliedschaft"> Locations </a>
+    <a href="/#mitgliedschaft"> Team </a>
+  </div>
+  <div class="contact-link">
+    <a href="mailto:contact@mcweed.de">Ticketshop</a>
+  </div>
+  <div class="info-grid">
+    <!-- <div class="address">
+      <div>Mascri Weed Cannabis Social Club Düsseldorf</div>
+      <div>Königsallee 1</div>
+      <div>40212 Düsseldorf</div>
+      <div>Deutschland</div>
+    </div> -->
+    <div class="contact-info">
+      <a href="mailto:planofdecades@gmail.com">planofdecades@gmail.com</a>
+    </div>
+    <div class="social-links">
+      <a href="https://www.instagram.com/plan_of_decades/" target="_blank">
+        Instagram
+      </a>
+      <a href="https://www.youtube.com/@planofdecades" target="_blank">
+        YouTube
+      </a>
+    </div>
+    <div class="legal-links">
+      <a href="/impressum"> Imprint </a>
+      <a href="/datenschutz"> Data Privacy </a>
+    </div>
+  </div>
+</footer>
+<style>
+  footer {
+    padding: 6rem 3rem;
+    background: var(--gray-dark);
+    color: var(--white);
+    text-align: center;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+
+    @media (min-width: 720px) {
+      padding: 6rem 6rem;
+    }
+  }
+  .anchor-links {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+    border-bottom: 1px solid var(--white);
+    padding-bottom: 6rem;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @media (min-width: 720px) {
+      flex-direction: row;
+      gap: 3rem;
+    }
+  }
+
+  .anchor-links a {
+    display: flex;
+    gap: 0.5em;
+  }
+
+  .anchor-links svg {
+    height: 1.5rem;
+    min-width: 1.5rem;
+    margin: auto;
+  }
+  .anchor-links svg * {
+    fill: var(--muted);
+  }
+  .contact-link {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 6rem;
+    line-height: 7rem;
+    border-bottom: 1px solid var(--white);
+    padding: 6rem 0;
+    @media (min-width: 720px) {
+      font-size: 10rem;
+    }
+  }
+  .contact-link a {
+    text-align: start;
+  }
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
+    margin-top: 1em;
+    font-size: 1.4rem;
+  }
+  .info-grid div {
+    display: flex;
+    flex-direction: column;
+  }
+  a {
+    color: var(--white);
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .address,
+  .contact-info {
+    text-align: left;
+  }
+  .legal-links,
+  .social-links {
+    text-align: left;
+    @media (min-width: 720px) {
+      text-align: right;
+    }
+  }
+</style>
