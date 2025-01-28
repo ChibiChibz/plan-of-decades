@@ -1,0 +1,88 @@
+---
+import Card from "../components/Card.astro";
+---
+
+<div class="guests" id="guests">
+  <h2 class="guests-headline">Line Up</h2>
+  <div class="guests-category">
+    <h3 class="guests-category-headline">DJs</h3>
+    <div class="guests-category-cards">
+      <Card
+        name="Asap Ju"
+        role="3vs3 All Style"
+        image="/images/guests/Asap Ju DJ 3vs3 All Style.webp"
+      />
+      <Card
+        name="Ma2t"
+        role="1vs1 Hip Hop"
+        image="/images/guests/Ma2t DJ Hip Hop.webp"
+      />
+    </div>
+  </div>
+  <div class="guests-category">
+    <h3 class="guests-category-headline">Judges</h3>
+    <div class="guests-category-cards">
+      <Card
+        name="Jimmy Yudat"
+        role="1vs1 Hip Hop"
+        image="/images/guests/Jimmy Yudat Judge post-01.webp"
+      />
+      <Card
+        name="Kelly"
+        role="1vs1 Hip Hop"
+        image="/images/guests/Kelly Judge post-01.webp"
+      />
+      <Card
+        name="Hisoka"
+        role="1vs1 Hip Hop"
+        image="/images/guests/Hisoka Judge post-01.webp"
+      />
+    </div>
+    <div class="guests-category-cards">
+      <Card
+        name="Paris"
+        role="3vs3 All Style"
+        image="/images/guests/Paris Judge 3vs3 All Style.webp"
+      />
+    </div>
+  </div>
+  <div class="guests-category">
+    <h3 class="guests-category-headline">Host</h3>
+    <div class="guests-category-cards">
+      <Card
+        name="Jonny Loco"
+        role="MC"
+        image="/images/guests/Jonny Loco Host-01.webp"
+      />
+    </div>
+  </div>
+</div>
+
+<style lang="scss" scoped>
+  .guests {
+    padding: 6rem 0;
+    position: relative;
+
+    &-headline {
+      font-size: 10rem;
+      font-weight: bold;
+    }
+
+    &-category {
+      padding: 6rem 0;
+      position: relative;
+
+      &-headline {
+        font-size: 4rem;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      &-cards {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+      }
+    }
+  }
+</style>

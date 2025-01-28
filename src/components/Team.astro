@@ -1,0 +1,36 @@
+---
+import Card from "../components/Card.astro";
+---
+
+<div class="team" id="team">
+  <h2 class="team-headline">Team</h2>
+  <div class="team-cards">
+    <Card name="El Greco" role="Co-Founder" image="/images/john-doe.jpg" />
+    <Card name="Steven" role="Co-Founder" image="/images/john-doe.jpg" />
+    <Card
+      name="Vitam"
+      role="Business Administration"
+      image="/images/john-doe.jpg"
+    />
+    <Card name="Papa Tom" role="Production" image="/images/john-doe.jpg" />
+    <Card name="Ant" role="Public Relations" image="/images/john-doe.jpg" />
+  </div>
+
+  <style lang="scss" scoped>
+    .team {
+      padding: 10rem 0;
+      position: relative;
+
+      &-headline {
+        font-size: 6rem;
+        font-weight: bold;
+      }
+
+      &-cards {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+      }
+    }
+  </style>
+</div>
