@@ -1,0 +1,103 @@
+---
+interface Location {
+  event: string;
+  venue: string;
+  address: string;
+  link: string;
+  linkText: string;
+}
+
+const locations = [
+  {
+    event: "Workshops",
+    venue: "YMCA – Young Men’s Christian Association",
+    address: "Nik. Germanou 1, Thessaloniki 546 21, Greece",
+    link: "https://maps.app.goo.gl/KXqZD7Nqg6QEByDv8",
+    linkText: "Google Maps",
+  },
+  {
+    event: "Preselection (Saturday)",
+    venue: "Studio 29A",
+    address: "Ptolemeon 29A, Thessaloniki 546 30, Greece",
+    link: "https://maps.app.goo.gl/yJyd5gtCAsrQdLBX7?g_st=com.google.maps.preview.copy",
+    linkText: "Google Maps",
+  },
+  {
+    event: "Main Event (Sunday)",
+    venue: "Block 33",
+    address: "26is Oktovriou 33, Thessaloniki 546 27, Greece",
+    link: "https://maps.app.goo.gl/VqaNuJ3D3GwsywWm8",
+    linkText: "Google Maps",
+  },
+  {
+    event: "Accomodation",
+    venue: "Zeus is Loose Hostel",
+    address: "Klisouras 13, Thessaloniki 546 31, Greece",
+    link: "https://maps.app.goo.gl/D6djhjw7s8iz2omd8",
+    linkText: "Google Maps",
+  },
+];
+---
+
+<div class="locations" id="locations">
+  <h2 class="locations-headline">Locations</h2>
+  <ul class="locations-list">
+    {
+      locations.map((location) => (
+        <li class="location">
+          <div class="location-event">{location.event}</div>
+          <div class="location-venue">{location.venue}</div>
+          <div class="location-address">{location.address}</div>
+          <a href={location.link} class="location-link">
+            {location.linkText}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</div>
+
+<style lang="scss" scoped>
+  .locations {
+    padding: 10rem 0;
+    position: relative;
+
+    &-headline {
+      font-size: 6rem;
+      font-weight: bold;
+    }
+
+    .location {
+      padding: 2rem 0;
+      display: flex;
+      flex-direction: column;
+      border-bottom: 1px solid var(--white);
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      &-event {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+
+      &-venue {
+        font-size: 3rem;
+      }
+
+      &-address {
+        font-size: 1.5rem;
+      }
+
+      &-link {
+        text-decoration: underline;
+        font-size: 1.5rem;
+        color: var(--white);
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+</style>

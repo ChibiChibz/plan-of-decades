@@ -3,6 +3,7 @@ import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Hero from "../components/Hero.astro";
 import About from "../components/About.astro";
+import Locations from "../components/Locations.astro";
 import Tickets from "../components/Tickets.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
@@ -29,6 +30,7 @@ const { frontmatter } = data;
     <!-- <About id="ueber-uns" /> -->
     <main>
       <Tickets id="tickets" />
+      <Locations />
     </main>
     <Footer />
     <script>
