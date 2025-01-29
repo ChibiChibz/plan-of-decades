@@ -1,6 +1,6 @@
 ---
 title: "Privacy Policy"
-description: ""
+description: "Plan of Decades Privacy Policy"
 heroImage: "/blog-placeholder-3.jpg"
 ---
 
@@ -55,8 +55,8 @@ Deletion of your data ("right to be forgotten").
 Restriction of data processing.
 Objection to data processing.
 Data portability to another data controller.
-Lodging a complaint with the Hellenic Data Protection Authority (www.dpa.gr).
-To exercise any of these rights, please contact us at planofdecades@gmail.com or +30 6986763625.
+Lodging a complaint with the Hellenic Data Protection Authority (<www.dpa.gr>).
+To exercise any of these rights, please contact us at <planofdecades@gmail.com> or +30 6986763625.
 
 ### 7. Data Security
 

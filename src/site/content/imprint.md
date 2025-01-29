@@ -1,40 +1,27 @@
 ---
-title: 'Impressum'
-description: 'Gemeinnütziger Verein zur Förderung von Kunst und Kultu'
+title: 'Imprint'
+description: 'Plan of Decades Imprint'
 heroImage: '/blog-placeholder-3.jpg'
 ---
-**Cannabis Social Club MC Weed e.V. Vertreten durch:**
+## Imprint & Disclaimer
 
-Rashid Mascri
-<rachidmascri27@gmail.com>
-Königsallee 1
-40212 Düsseldorf
+### Liability for Content
 
-**Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:**
+The content of our website has been created with the utmost care. However, we cannot guarantee the accuracy, completeness, or timeliness of the information provided.
 
-Rashid Mascri
-<rachidmascri27@gmail.com>
-Königsallee 1
-40212 Düsseldorf
+### Liability for Links
 
-**Webdesign:**
+Our website may contain links to external third-party websites over which we have no control. Therefore, we assume no responsibility for the content of these external sites. The respective provider or operator of the linked websites is always responsible for their content. At the time of linking, these external sites were checked for possible legal violations, and no illegal content was detected. However, permanent monitoring of the linked pages is not feasible without concrete evidence of a legal violation. If we become aware of any legal infringements, we will remove such links immediately.
 
-Bianca Giessler
-<alina_bianca@t-online.de>
+### Copyright & Intellectual Property Rights
 
-**Webentwicklung:**
+The content of this website (texts, images, graphics, logos, etc.) is the intellectual property of Adithesis Organizer, unless otherwise stated. Copying, reproducing, modifying, distributing, or using any content beyond the limits of copyright law requires prior written permission.
 
-Chi Thanh Pham
-<chibi@zenmade.io>
+Downloading and printing content is permitted only for personal, non-commercial use. If any content on this website is not created by the administrator, third-party copyright is respected, and proper credit is given. If you notice any copyright infringement, please inform us at <planofdecades@gmail.com>. We will promptly remove any content found to be legally infringing.
 
-**Haftungsausschluss:**
+Commercial Use of Content: If you wish to use any content from our website for commercial purposes, please contact us.
 
-### Haftung für Links
-
-Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
-
-### Urheberrecht
-
-Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
-
-In der Regel stellen wir unsere Inhalte aber gern Dritten, auch zur kommerziellen Nutzung zur Verfügung. Sprechen Sie uns an, wenn Sie unsere Inhalte weiterverwenden wollen.
+**Contact Information**
+Adithesis Organizer
+Email: <planofdecades@gmail.com>
+Phone: +30 6986763625
