@@ -23,6 +23,8 @@ const today = new Date();
   </div>
   <div class="info-grid">
     <div class="contact-info">
+      <!-- Copyright Year & owner -->
+      &copy;{today.getFullYear()} Plan of Decades
       <a href="mailto:planofdecades@gmail.com">planofdecades@gmail.com</a>
     </div>
     <div class="social-links">
@@ -42,11 +44,9 @@ const today = new Date();
 <style>
   footer {
     padding: 6rem 3rem;
-    background: var(--gray-dark);
+    border-top: 3px solid var(--white);
     color: var(--white);
     text-align: center;
-    border-top-left-radius: 1em;
-    border-top-right-radius: 1em;
 
     @media (min-width: 720px) {
       padding: 6rem 6rem;
