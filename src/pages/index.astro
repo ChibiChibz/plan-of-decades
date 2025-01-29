@@ -9,6 +9,7 @@ import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import * as data from "../site/content/home.md";
 import Guests from "../components/Guests.astro";
+import Timetable from "../components/Timetable.astro";
 
 const { frontmatter } = data;
 
@@ -30,6 +31,7 @@ const { frontmatter } = data;
     <Hero title={frontmatter.title} description={frontmatter.description} />
     <main>
       <Tickets id="tickets" />
+      <Timetable />
       <Locations />
       <Guests />
       <Team />

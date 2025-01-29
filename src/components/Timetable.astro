@@ -1,0 +1,54 @@
+<div class="timetable" id="timetable">
+  <h2 class="timetable-headline">Timetable</h2>
+  <div class="timetable-images">
+    <div class="timetable-image">
+      <img
+        src="/images/timetable/Plan of Decades 3 Friday Timeline-01.webp"
+        alt="Timetable Friday"
+      />
+    </div>
+    <div class="timetable-image">
+      <img
+        src="public/images/timetable/Plan of Decades 3 Saturday Timeline-01.webp"
+        alt="Timetable Saturday"
+      />
+    </div>
+    <div class="timetable-image">
+      <img
+        src="public/images/timetable/Plan of Decades 3 Sunday Timeline-01.webp"
+        alt="Timetable Sunday"
+      />
+    </div>
+  </div>
+</div>
+
+<style lang="scss" scoped>
+  .timetable {
+    padding: 5rem 0;
+    position: relative;
+    width: 100%;
+
+    &-headline {
+      font-size: 6rem;
+      font-weight: bold;
+    }
+
+    &-images {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 5rem;
+      width: 100%;
+
+      @media (max-width: 720px) {
+        flex-direction: column;
+        gap: 5rem;
+      }
+    }
+
+    &-image {
+      width: 100%;
+      height: auto;
+    }
+  }
+</style>
