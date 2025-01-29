@@ -25,12 +25,11 @@ const { ...rest } = Astro.props;
     position: relative;
   }
   .tickets .content {
-    margin: 5rem auto 23rem;
+    margin: 3rem auto;
     font-size: 1.2rem;
     @media (min-width: 720px) {
       width: 80rem;
       max-width: 100%;
-      margin: 3rem auto;
       font-size: 1.5rem;
     }
   }
@@ -53,11 +52,15 @@ const { ...rest } = Astro.props;
     gap: 1rem;
     text-decoration: underline;
     font-weight: bold;
-    font-size: 6rem;
+    font-size: 4rem;
     text-align: center;
     border: 3px solid var(--white);
     padding: 1rem 2rem;
     width: fit-content;
+
+    @media (min-width: 720px) {
+      font-size: 6rem;
+    }
   }
   .tickets-link:hover {
     text-decoration: none;

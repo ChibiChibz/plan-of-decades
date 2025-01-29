@@ -76,9 +76,14 @@ import { SITE_TITLE } from "../consts";
   }
   .hero-description {
     display: flex;
+    flex-direction: column-reverse;
     gap: 1rem;
     padding: 4rem;
     margin: auto;
+
+    @media (min-width: 720px) {
+      flex-direction: row;
+    }
   }
   .hero-text {
     display: flex;

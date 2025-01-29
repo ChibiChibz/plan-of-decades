@@ -81,8 +81,13 @@ import Card from "../components/Card.astro";
       &-cards {
         display: flex;
         justify-content: space-around;
-        gap: 2rem;
+        gap: 5rem;
         margin: 5rem 0;
+
+        @media (max-width: 720px) {
+          flex-direction: column;
+          align-items: center;
+        }
       }
     }
   }

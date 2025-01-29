@@ -29,7 +29,12 @@ import Card from "../components/Card.astro";
       &-cards {
         display: flex;
         justify-content: space-between;
-        gap: 2rem;
+        gap: 5rem;
+
+        @media (max-width: 720px) {
+          flex-direction: column;
+          gap: 5rem;
+        }
       }
     }
   </style>
