@@ -5,31 +5,47 @@ import Card from "../components/Card.astro";
 <div class="team" id="team">
   <h2 class="team-headline">Team</h2>
   <div class="team-cards">
-    <Card name="El Greco" role="Co-Founder" image="/images/john-doe.jpg" />
-    <Card name="Steven" role="Co-Founder" image="/images/john-doe.jpg" />
+    <Card
+      name="El Greco"
+      role="Co-Founder"
+      image="/images/team/Raf Image.webp"
+    />
+    <Card
+      name="Steven"
+      role="Co-Founder"
+      image="/images/team/Steven image.webp"
+    />
     <Card
       name="Vitam"
       role="Business Administration"
-      image="/images/john-doe.jpg"
+      image="/images/team/Vitam image.webp"
     />
-    <Card name="Papa Tom" role="Production" image="/images/john-doe.jpg" />
-    <Card name="Ant" role="Public Relations" image="/images/john-doe.jpg" />
+    <Card
+      name="Papa Tom"
+      role="Production"
+      image="/images/team/PapaTom image.webp"
+    />
+    <Card
+      name="Ant"
+      role="Public Relations"
+      image="/images/team/Elina image.webp"
+    />
   </div>
 
-  <style lang="scss" scoped>
+  <style lang="scss">
     .team {
       padding: 10rem 0;
       position: relative;
-
-      &-headline {
-        font-size: 6rem;
-        font-weight: bold;
-      }
 
       &-cards {
         display: flex;
         justify-content: space-between;
         gap: 5rem;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
 
         @media (max-width: 720px) {
           flex-direction: column;
